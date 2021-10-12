@@ -1,0 +1,111 @@
+html,
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Merriweather", serif;
+}
+
+h1 {
+    margin-bottom: 1.2rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 1rem;
+}
+p {
+    margin-bottom: 2rem;
+    line-height: 1.7rem;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: var(--white);
+}
+
+footer p {
+    padding: 1rem 2rem 1rem 1rem;
+    text-align: right;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+
+.font-merriweather {
+    font-family: "Merriweather", serif;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------ */
+
+
+.card__img{
+width: 100%;
+height: auto;
+background-image: url(https://picsum.photos/id/0/400/400);
+background-size: cover;
+}
+
+.card__img.show-image-two {
+    background-image: url(https://picsum.photos/id/1/400/400);
+
+}
+
+.flash{
+      -webkit-animation: flash .5s;
+	  animation: flash .5s;
+}
+
+.unflash{
+      -webkit-animation: unflash .5s;
+	  animation: unflash .5s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .2;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+};
+
+@-webkit-keyframes unflash {
+	0% {
+		opacity: .2;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes unflash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+};
