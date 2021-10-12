@@ -1,0 +1,23 @@
+Setup sass
+https://dev.to/chrissiemhrk/how-to-setup-sass-in-your-project-2bo1
+
+In terminal:
+- npm init
+- npm install node-sass
+
+In the package.json file
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1"
+},
+
+change to:
+"scripts": {
+"sass": "node-sass -w scss/ -o css/ --recursive"
+},
+
+
+
+'npm run sass' to start!
+
+
+Used GSAP

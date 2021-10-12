@@ -17,15 +17,19 @@ cardImg.addEventListener("mouseover", mOver, false);
 cardImg.addEventListener("mouseout", mOut, false);
 
 function mOver() {
-    cardImg.classList.remove("unflash");
-    cardImg.classList.add("show-image-two");
-    cardImg.classList.add("flash");
+    if (!screenSize.matches) {
+        cardImg.classList.remove("unflash");
+        cardImg.classList.add("show-image-two");
+        cardImg.classList.add("flash");
+    }
 }
 
 function mOut() {
-    cardImg.classList.remove("show-image-two");
-    cardImg.classList.remove("flash");
-    cardImg.classList.add("unflash");
+    if (!screenSize.matches) {
+        cardImg.classList.remove("show-image-two");
+        cardImg.classList.remove("flash");
+        cardImg.classList.add("unflash");
+    }
 }
 
 
