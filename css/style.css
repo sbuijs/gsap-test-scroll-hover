@@ -67,13 +67,13 @@ background-size: cover;
 }
 
 .flash{
-      -webkit-animation: flash .5s;
-	  animation: flash .5s;
+      -webkit-animation: flash 1s;
+	  animation: flash 1s;
 }
 
 .unflash{
-      -webkit-animation: unflash .5s;
-	  animation: unflash .5s;
+      -webkit-animation: unflash 1s;
+	  animation: unflash 1s;
 }
 
 @-webkit-keyframes flash {
