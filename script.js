@@ -1,15 +1,6 @@
 //Check if the screen size is smaller than x
 let screenSize = window.matchMedia("(max-width: 700px)");
 
-function checkScreeSize(screenSize) {
-    if (screenSize.matches) {
-        // gsapAnimate();
-    } else {
-        return;
-    }
-}
-checkScreeSize(screenSize);
-
 //on hover state show/hide image two
 //Desktop: for ech card image create an event lisener for mouseover and mouseout
 const arrayCardImg = document.querySelectorAll(".card__img");
@@ -31,28 +22,27 @@ arrayCardImg.forEach(element => {
             element.classList.add("unflash");
         }
     }
-
 });
 
 
 //info about gsap
 //https://greensock.com/docs/v3/Plugins/ScrollTrigger/
-
-
 const cardImageArray = gsap.utils.toArray('.card__img');
 //for each card create an animation
 cardImageArray.forEach(cardimage => {
-    gsap.to(cardimage, {
-        scrollTrigger: {
-            trigger: cardimage,
-            //start the animation when the element is in the center of the screen
-            start: "top 40%",
-            end: "top 30%",
-            scrub: true,
-            //restart the animation ever time it enters the viewport
-            toggleActions: "restart none reverse reset",
-            markers: false,
-        },
-        className: "+=card__img d-block show-image-two flash",
-    });
-})
+    if (screenSize.matches) {
+        gsap.to(cardimage, {
+            scrollTrigger: {
+                trigger: cardimage,
+                //start the animation when the element is in the center of the screen
+                start: "top 40%",
+                end: "top 30%",
+                scrub: true,
+                //restart the animation ever time it enters the viewport
+                toggleActions: "restart none reverse reset",
+                markers: false,
+            },
+            className: "+=card__img d-block show-image-two flash",
+        });
+    };
+});
