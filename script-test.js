@@ -3,7 +3,7 @@ let screenSize = window.matchMedia("(max-width: 700px)");
 
 function checkScreeSize(screenSize) {
     if (screenSize.matches) {
-        gsapAnimate();
+        // gsapAnimate();
     } else {
         return;
     }
@@ -39,13 +39,12 @@ arrayCardImg.forEach(element => {
 //https://greensock.com/docs/v3/Plugins/ScrollTrigger/
 
 
-// animate the image
-function gsapAnimate() {
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to(".card__img", {
+const cardImageArray = gsap.utils.toArray('.card__img');
+//for each card create an animation
+cardImageArray.forEach(cardimage => {
+    gsap.to(cardimage, {
         scrollTrigger: {
-            trigger: ".card__img",
+            trigger: cardimage,
             //start the animation when the element is in the center of the screen
             start: "top 40%",
             end: "top 30%",
@@ -56,4 +55,4 @@ function gsapAnimate() {
         },
         className: "+=card__img d-block show-image-two flash",
     });
-};
+})
