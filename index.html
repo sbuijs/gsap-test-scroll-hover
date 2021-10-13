@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> GSAP test scroll hover</title>
+    <title> GSAP test scroll hover 2 </title>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -27,23 +27,36 @@
 <body>
     <section id="intro" class="">
         <div class="container">
-            <h1 class="my-4">Huston. This is a test.</h1>
+            <!-- <h1 class="my-4">Huston. This is a test.</h1>
             <h2>What we are testing</h2>
             <p class="mb-0">- Only on desktop: show second image on hover</p>
             <p class="mb-4">- Only on mobile: when scrolling show second image</p>
 
-            <p><i>fyi: when changing desktop/mobile make sure to refesh the page</i></p>
+            <p><i>fyi: when changing desktop/mobile make sure to refesh the page</i></p> -->
+
+            <h1 class="my-4">Huston. Dit is een test.</h1>
+            <h2>Wat testen we?</h2>
+            <p class="mb-0">- Alleen voor desktop: wanneer er over de afbeelding gehoverd wordt, laat de tweede
+                afbeelding zien</p>
+            <p class="mb-4">- Alleen voor mobile: wanneer er gescrollt wordt, laat de tweede afbeelding zien.</p>
+            <p><i>Let op: Wanneer dit scherm verkleind/vergroot wordt, vergeet niet de pagina te refreshen.</i></p>
+
 
         </div>
     </section>
     <section id="">
         <div class="container" id="container-cards">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+            <div class="row row-cols-1 row-cols-lg-3 g-3">
+
                 <div class="col">
                     <div class="card shadow-sm rounded-2 overflow-hidden position-relative h-100">
                         <div class="card__head d-flex flex-column mb-4">
-                            <div class="card__image d-block">
-                                <div class="card__img d-block show-image-one unflash"></div>
+                            <div class="card__images d-block">
+                                <img src="https://picsum.photos/id/1029/400/400" class="card__image"
+                                    alt="Responsive image" width="400px" height="400px">
+                                <!-- second image is the 'hidden' image -->
+                                <img src="https://picsum.photos/id/101/400/400" class="card__image"
+                                    alt="Responsive image" width="400px" height="400px">
                             </div>
                         </div>
                         <div class="card__body d-flex flex-column px-3 flex-grow-1">
@@ -58,8 +71,12 @@
                 <div class="col">
                     <div class="card shadow-sm rounded-2 overflow-hidden position-relative h-100">
                         <div class="card__head d-flex flex-column mb-4">
-                            <div class="card__image d-block">
-                                <div class="card__img d-block show-image-one unflash"></div>
+                            <div class="card__images d-block">
+                                <img src="https://picsum.photos/id/1029/400/400" class="card__image"
+                                    alt="Responsive image" width="400px" height="400px">
+                                <!-- second image is the 'hidden' image -->
+                                <img src="https://picsum.photos/id/101/400/400" class="card__image"
+                                    alt="Responsive image" width="400px" height="400px">
                             </div>
                         </div>
                         <div class="card__body d-flex flex-column px-3 flex-grow-1">
@@ -75,8 +92,12 @@
                 <div class="col">
                     <div class="card shadow-sm rounded-2 overflow-hidden position-relative h-100">
                         <div class="card__head d-flex flex-column mb-4">
-                            <div class="card__image d-block">
-                                <div class="card__img d-block show-image-one unflash"></div>
+                            <div class="card__images d-block">
+                                <img src="https://picsum.photos/id/1029/400/400" class="card__image"
+                                    alt="Responsive image" width="400px" height="400px">
+                                <!-- second image is the 'hidden' image -->
+                                <img src="https://picsum.photos/id/101/400/400" class="card__image"
+                                    alt="Responsive image" width="400px" height="400px">
                             </div>
                         </div>
                         <div class="card__body d-flex flex-column px-3 flex-grow-1">

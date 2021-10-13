@@ -3,31 +3,21 @@ let screenSize = window.matchMedia("(max-width: 700px)");
 
 //on hover state show/hide image two
 //Desktop: for ech card image create an event lisener for mouseover and mouseout
-const arrayCardImg = document.querySelectorAll(".card__img");
+const arrayCardImg = document.querySelectorAll(".card__images");
 arrayCardImg.forEach(element => {
-    element.addEventListener("mouseover", mOver, false);
-    element.addEventListener("mouseout", mOut, false);
+    element.addEventListener("mouseover", toggleReveal, false);
+    element.addEventListener("mouseout", toggleReveal, false);
 
-    function mOver() {
+    function toggleReveal() {
         if (!screenSize.matches) {
-            element.classList.remove("unflash");
-            element.classList.add("show-image-two");
-            element.classList.add("flash");
-        }
-    }
-    function mOut() {
-        if (!screenSize.matches) {
-            element.classList.remove("show-image-two");
-            element.classList.remove("flash");
-            element.classList.add("unflash");
+            element.classList.toggle("reveal");
         }
     }
 });
 
-
 //info about gsap
 //https://greensock.com/docs/v3/Plugins/ScrollTrigger/
-const cardImageArray = gsap.utils.toArray('.card__img');
+const cardImageArray = gsap.utils.toArray('.card__images');
 //for each card create an animation
 cardImageArray.forEach(cardimage => {
     if (screenSize.matches) {
@@ -42,7 +32,7 @@ cardImageArray.forEach(cardimage => {
                 toggleActions: "restart none reverse reset",
                 markers: false,
             },
-            className: "+=card__img d-block show-image-two flash",
+            className: "+=card__images d-block reveal",
         });
     };
 });
