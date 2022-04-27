@@ -14,7 +14,7 @@ What we are testing
 </div>
 <br/>
 <br/>
-<img width="1552" alt="Screenshot 2022-04-27 at 12 14 23" src="https://user-images.githubusercontent.com/1607627/165496209-0b54810b-52c1-4c8a-a39c-b5bab22c648c.png">
+<img width="1552" alt="Screenshot 2022-04-27 at 12 15 14" src="https://user-images.githubusercontent.com/1607627/165496367-23058a37-9437-4eda-bb96-1ce18acb46c5.png">
 
 
 ## Built With
