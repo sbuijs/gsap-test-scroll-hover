@@ -14,8 +14,8 @@ What we are testing
 </div>
 <br/>
 <br/>
+<img width="1552" alt="Screenshot 2022-04-27 at 12 14 23" src="https://user-images.githubusercontent.com/1607627/165496209-0b54810b-52c1-4c8a-a39c-b5bab22c648c.png">
 
-<img width="1552" alt="simple-guessing-game" src="https://user-images.githubusercontent.com/1607627/165161199-55d1c5bd-8ce8-4287-8c11-8f24d87e1366.png">
 
 ## Built With
 - GSAP
